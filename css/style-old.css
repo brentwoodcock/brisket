@@ -1,0 +1,102 @@
+body {
+	font-family: 'Quicksand', sans-serif; /* text */
+	color: rgba(10, 10, 10, 1);
+	font-size: 1.75em;
+}
+h1, h2, h3, h4 {
+	font-family: 'Comfortaa', cursive; /* headings */
+}
+
+.bkg {
+    background-image: url('../img/background.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    overflow: hidden;
+}
+.container-login-modal {
+	background-color: rgba(135, 22, 65, .8); /* grape purple */
+	padding: 2em;
+	display: none;
+}
+.container-login-modal h2, .container-login-modal h3 {
+	color: #fff;
+}
+.row-login-about {
+
+}
+.col-login-about {
+	text-align: center;
+}
+.row-login-options {
+
+}
+.col-login-pinterest, .col-login-nologin {
+	text-align: center;
+}
+.btn-nologin {
+
+}
+.container-main {
+	/* display: none; */
+}
+.row-basic-search {
+	width: 100%
+	margin: 0;
+	background-color: rgba(47, 89, 16, .8); /* bottle green */
+	padding: 2em;
+	/*display: none;*/
+}
+.row-adv-search {
+	display: none;
+}
+.col-basic-search {
+	text-align: center;
+}
+.basic-search-input {
+	border: none;
+	border-radius: 5px;
+	width: 10em;
+	height: 2em;
+	vertical-align: middle;
+	margin: .5em;
+	padding: .2em;
+}
+#basic-search-submit {
+	margin: .5em;
+}
+#input-min-price, #input-max-price {
+ 	width: 4.5em;
+}
+.row-results {
+	width: 100%;
+	margin: 0;
+	padding: 2em 0;
+	display: none;
+}
+.col-results {
+	margin: 0.25em;
+	padding: 1em;
+	width: calc(33% - 0.5em);
+	height: auto;
+	background-color: rgba(47, 89, 16, .8); /* bottle green */
+	box-sizing: border-box;
+}
+.col-results div {
+	width: 100%;
+}
+.col-results h3, p, div {
+	text-align: center;
+}
+.row-search-actions {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.col-buy-btn, .col-pin-btn {
+	padding: 0;
+	margin: 0;
+	width: 49%;
+}

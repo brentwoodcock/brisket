@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="bkg">
+        <div class="container-fluid container-login-modal">
+            <div class="row row-login-about">
+                <div class="col col-xs-12 col-login-about">
+                    <h2>Find a restaurant nearby and maps your way to culinary satisfaction.
+            </div><!-- end col-login-about -->
+        </div><!-- end row-login-about -->
+        <div class="row row-login-options">
+            <div class="col col-xs-6 col-login-firebase">
+                <h3>Login to save your restaurant selections</h3>
+                <input type="button" class="btn btn-primary btn-brisket" value="Log In" />
+                <input type="button" class="btn btn-primary btn-signup btn-brisket" value="Sign Up" />
+            </div><!-- end col-login-pinterest -->
+            <div class="col col-xs-6 col-login-nologin">
+                <h3>Continue without signing in (you will not be able to save your selections)</h3>
+                <input type="button" class="btn btn-primary btn-nologin btn-brisket" value="Continue" />
+            </div><!-- end col-login-nologin -->
+        </div><!-- end row-login-options -->
+    </div><!-- end container-login-modal -->
+
+    <div class="container-fluid container-main">
+        <div class="row row-basic-search">
+            <div class="col col-xs-12 col-basic-search">
+                <input id="input-cuisine" type="text" value="Cuisine, Name, etc." class="basic-search-input" />
+                <br />
+                <input id="input-radius" type="text" value="Distance" class="basic-search-input" />
+                <br />
+                <input id="basic-search-submit" type="button" value="Satisfy Your Craving" class="btn btn-large btn-brisket" />
+
+            </div><!-- end col-basic-search -->
+        </div><!-- end row-basic-search -->
+            <div class="row row-results">
+                <div class="col col-xs-3 col-navbar">
+                    <nav id="spy">
+                        <ul class="sidebar-nav nav">
+                            <li class="sidebar-brand"><a href="#title"><span class="fa fa-home solo">brisket</span></a></li>
+                            <br>
+                            <div class="filter-padding search-filter-tab pt0 pb0 mtop">
+                            <div class="sidebar-dropdown">
+                         <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Category
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Dine-In</a></li>
+                              <li><a href="#">Delivery</a></li>
+                              <li><a href="#">Takeout</a></li>
+                            </ul>
+                            </div>
+                            <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Cuisine
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Mexican</a></li>
+                              <li><a href="#">American</a></li>
+                              <li><a href="#">Fast Food</a></li>
+                              <li><a href="#">Sandwich</a></li>
+                              <li><a href="#">Cafe</a></li>
+                              <li><a href="#">Pizza</a></li>
+                              <li><a href="#">Tex-Mex</a></li>
+                              <li><a href="#">Desserts</a></li>
+                            </ul>
+                            </div>
+                            <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Establishment Type
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Casual Dining</a></li>
+                              <li><a href="#">Fast Food</a></li>
+                              <li><a href="#">Bars</a></li>
+                              <li><a href="#">Cafe</a></li>
+                              <li><a href="#">Food Truck</a></li>
+                              <li><a href="#">Fine Dining</a></li>
+                              <li><a href="#">Deli</a></li>
+                              <li><a href="#">Bakery</a></li>
+                            </ul>
+                            </div>
+                            <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Cost For Two
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Less than $30</a></li>
+                              <li><a href="#">$30 to $70</a></li>
+                              <li><a href="#">$70 to $100</a></li>
+                              <li><a href="#">$100+</a></li>
+                            </ul>
+                            </div>
+                            </div>
+
+
+        <div class="sidebar-list">
+                        <div class="ui header large mb0">
+                                <div class="search-filter-label pb5" tabindex="0" title="Category">Category</div>
+                        </div>
+                            <a class="fontsize4" href="">
+                                <div class="link_hover search_filter category">Dine-In <span class="right num grey-text"></span></div>
+                            </a>
+                            <a class="fontsize4" href="">
+                                <div class="link_hover search_filter category">Delivery <span class="right num grey-text"></span></div>
+                            </a>
+                            <a class="fontsize4" href="">
+                                <div class="link_hover search_filter category">Take Out <span class="right num grey-text"></span></div>
+                            </a>
+                    
+                    <br>
+                                             <div class="search-filter-tab pt0 pb0 mtop" id="filter-cuisines-html-area">
+                        <div class="ui header large mb0">
+                            <div class="search-filter-label pb5" tabindex="0" title="Cuisine">Cuisine</div>
+                        </div>
+                        <div class="cursor-pointer">
+                            <a href="">
+                                <div title="Mexican Restaurants" class="link_hover w100 search_filter cuisine">Mexican <span class="right grey-text"></span></div>
+                            </a>
+                            <a href="">
+                                <div title="American Restaurants" class="link_hover w100 search_filter cuisine">American <span class="right grey-text"></span></div>
+                            </a>
+                            <a href="">
+                                <div title="Fast Food Restaurants" class="link_hover w100 search_filter cuisine">Fast Food <span class="right grey-text"></span></div>
+                            </a>
+                            <a href="">
+                                <div title="Sandwich Restaurants" class="link_hover w100 search_filter cuisine">Sandwich <span class="right grey-text"></span></div>
+                            </a>
+                            <a href="">
+                                <div title="Cafe Restaurants" class="link_hover w100 search_filter cuisine">Cafe <span class="right grey-text"></span></div>
+                            </a>
+                            <a href="">
+                                <div title="Pizza Restaurants" class="link_hover w100 search_filter cuisine">Pizza <span class="right grey-text"></span></div>
+                            </a>
+                            <a href="">
+                                <div title="Tex-Mex Restaurants" class="link_hover w100 search_filter cuisine">Tex-Mex <span class="right grey-text"></span></div>
+                            </a>
+                            <a href="">
+                                <div title="Desserts Restaurants" class="link_hover w100 search_filter cuisine">Desserts <span class="right grey-text"></span></div>
+                            </a>
+                            
+                            <a href="#popup1">See All Cuisines</a>
+                            </div>
+
+                           
+                            
+
+                        </div>
+                        <br>
+                        <div class="search-filter-tab pt0 pb0 mtop">
+                        <div class="ui header large mb0">
+                            <div class="search-filter-label pb5" tabindex="0" title="Establishment Type">Establishment Type</div>
+                        </div>
+                        <div class="cursor-pointer">
+                            <a title="Casual Dining in Austin" href="">
+                                <div class="link_hover w100 search_filter establishment cursor-pointer">Casual Dining <span class="right grey-text"></span></div>
+                            </a>
+                            <a title="Fast Food in Austin" href="">
+                                <div class="link_hover w100 search_filter establishment cursor-pointer">Fast Food <span class="right grey-text"></span></div>
+                            </a>
+                            <a title="Bars in Austin" href="">
+                                <div class="link_hover w100 search_filter establishment cursor-pointer">Bars <span class="right grey-text"></span></div>
+                            </a>
+                            <a title="Cafés in Austin" href="">
+                                <div class="link_hover w100 search_filter establishment cursor-pointer">Cafés <span class="right grey-text"></span></div>
+                            </a>
+                            <a title="Food Trucks in Austin" href="">
+                                <div class="link_hover w100 search_filter establishment cursor-pointer">Food Trucks <span class="right grey-text"></span></div>
+                            </a>
+                            <a title="Sandwich Shops in Austin" href="">
+                                <div class="link_hover w100 search_filter establishment cursor-pointer">Fine Dining <span class="right grey-text"></span></div>
+                            </a>
+                            <a title="Bakeries in Austin" href="">
+                                <div class="link_hover w100 search_filter establishment cursor-pointer">Deli <span class="right grey-text"></span></div>
+                            </a>
+                            <a title="Fine Dining in Austin" href="">
+                                <div class="link_hover w100 search_filter establishment cursor-pointer">Bakery <span class="right grey-text"></span></div>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="search-filter-tab pt0 pb0 mtop" id="filter-cost-html-area-close">
+                        <div class="ui header large mb0">
+                            <div class="search-filter-label pb5" tabindex="0" title="Cost for two">Cost For Two</div>
+                        </div>
+                        <div id="filter-cost-html-area" class="facet-list-dialog">
+                            <a href="">
+                                <div class="link_hover w100 search_filter cft cursor-pointer">Less than $30 <span class="right grey-text"></span></div>
+                            </a>
+                            <a href="">
+                                <div class="link_hover w100 search_filter cft cursor-pointer"> $30 to $70<span class="right grey-text"></span></div>
+                            </a>
+                            <a href="">
+                                <div class="link_hover w100 search_filter cft cursor-pointer"> $70 to $100<span class="right grey-text"></span></div>
+                            </a>
+                            <a href="">
+                                <div class="link_hover w100 search_filter cft cursor-pointer">$100+<span class="right grey-text"></span></div>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                          </nav>
+                </div><!--end col nav bar -->
+
+                    <div class="col col-xs-9 col-result-target">
+                    </div><!-- end col results -->
+                    <div id="popup1" class="overlay">
+                            <div class="popup">
+                                <h2>All Cuisines</h2>
+                    <a class="close" href="#">×</a>
+                    <div class="content">
+                        <a href="">African American &middot;</a>
+                        <a href="">Asian &middot;</a>
+                        <a href="">Australian &middot;</a>
+                        <a href="">BBQ </a>
+                        <a href="">Bagels &middot;</a>
+                        <a href="">Belgian &middot;</a>
+                        <a href="">Beverages &middot;</a>
+                        <a href="">Brazilian </a>
+                        <a href="">British &middot;</a>
+                        <a href="">Bubble Tea &middot;</a>
+                        <a href="">Burger &middot;</a>
+                        <a href="">Cajun </a>
+                        <a href="">Caribbean &middot;</a>
+                        <a href="">Chinese &middot;</a>
+                        <a href="">Colombian &middot;</a>
+                        <a href="">Creole </a>
+                        <a href="">Cuban &middot;</a>
+                        <a href="">Dim Sum &middot;</a>
+                        <a href="">Donuts  &middot;</a>
+                        <a href="">Ethiopian </a>
+                        <a href="">European &middot;</a>
+                        <a href="">Filipino &middot;</a>
+                        <a href="">French &middot;</a>
+                        <a href="">Frozen Yogurt &middot;</a>
+                        <a href="">German &middot;</a>
+                        <a href="">Greek &middot;</a>
+                        <a href="">Hawaiian  &middot;</a>
+                        <a href="">Ice Cream &middot;</a>
+                        <a href="">Indonesian &middot;</a>
+                        <a href="">Irish &middot;</a>
+                        <a href="">Italian </a>
+                        <a href="">Jamaican &middot;</a>
+                        <a href="">Japanese  &middot;</a>
+                        <a href="">Korean </a>
+                        <a href="">Mediterranean &middot;</a>
+                        <a href="">Middle Eastern </a>
+                        <a href="">Mongolian &middot;</a>
+                        <a href="">Pizza &middot;</a>
+                        <a href="">Ramen &middot;</a>
+                        <a href="">Russian &middot;</a>
+                        <a href="">Seafood </a>
+                        <a href="">Singaporean &middot;</a>
+                        <a href="">Soul Food </a>
+                        <a href="">Steakhouse </a>
+                        <a href="">Sushi &middot;</a>
+                        <a href="">Teriyaki &middot;</a>
+                        <a href="">Tex-Mex &middot;</a>
+                        <a href="">Thai </a>
+                        <a href="">Vegetarian &middot;</a>
+                        <a href="">Vietnamese </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end row-results -->
+        </div>
+        <!-- end container-main -->
+    </div>
+    <!-- end bkg -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
+    <script src="js/app.zomato.js"></script>
+</body>
+
+</html>

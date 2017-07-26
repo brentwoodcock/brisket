@@ -1,0 +1,19 @@
+{
+  "name": "proxy",
+  "version": "1.0.0",
+  "description": "Acts as a pass through for zomato api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bdoyal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "request": "^2.75.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/slsriehl/which-wine"
+  }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa|Quicksand" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style-old.css">
+</head>
+<body>
+  <div class="bkg">
+	<div class="container-fluid container-login-modal">
+		<div class="row row-login-about">
+			<div class="col col-xs-12 col-login-about">
+				<h2>WhichWine will help you find wines nearby for any occasion, save them, and navigate to the store.
+			</div><!-- end col-login-about -->
+		</div><!-- end row-login-about -->
+		<div class="row row-login-options">
+			<div class="col col-xs-6 col-login-firebase">
+				<h3>Login to save your wine selections</h3>
+				<input type="button" class="btn btn-primary btn-login" value="Log In" />
+				<input type="button" class="btn btn-primary btn-signup" value="Sign Up" />
+			</div><!-- end col-login-pinterest -->
+			<div class="col col-xs-6 col-login-nologin">
+				<h3>Continue without signing in (you will not be able to save your selections)</h3>
+				<input type="button" class="btn btn-primary btn-nologin" value="Continue" />
+			</div><!-- end col-login-nologin -->
+		</div><!-- end row-login-options -->
+	</div><!-- end container-login-modal -->
+
+	<div class="container-fluid container-main">
+    	<div class="row row-basic-search">
+    		<div class="col col-xs-12 col-basic-search">
+    			<input class="input-name" type="text" value="Wine Name" class="basic-search-input" />
+    			<br />
+    			<select name="input-wine-type" id="input-wine-type" class="basic-search-input">
+    				<option value="red">Red</option>
+    				<option value="white">White</option>
+    				<option value="amber">Amber</option>
+    				<option value="rose">Rosé</option>
+    				<option value="clear">Clear</option>
+    			</select>
+    			<br />
+    			<input id="input-min-rating" type="text" value="Min Rating (0-5)" class="basic-search-input" />
+    			<br />
+    			<input id="input-min-price" type="text" value="Min $" class="basic-search-input" />
+    			<input id="input-max-price" type="text" value="Max $" class="basic-search-input" />
+    			<br />
+    			<input id="basic-search-submit" type="button" value="Find Wines" class="btn btn-large btn-primary" />
+    		</div><!-- end col-basic-search -->
+    	</div><!-- end row-basic-search -->
+    	<div class="row row-results">
+    	</div><!-- end row-results -->
+    </div><!-- end container-main -->
+  </div><!-- end bkg -->
+
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
+	<script src="js/old.js"></script>
+
+</body>
+</html>

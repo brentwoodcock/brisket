@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="bkg">
+        <div class="container-fluid container-login-modal">
+            <div class="row row-login-about">
+                <div class="col col-xs-12 col-login-about">
+                    <h2>Find a restaurant nearby and maps your way to culinary satisfaction.
+			</div><!-- end col-login-about -->
+		</div><!-- end row-login-about -->
+		<div class="row row-login-options">
+			<div class="col col-xs-6 col-login-firebase">
+				<h3>Login to save your restaurant selections</h3>
+				<input type="button" class="btn btn-primary btn-login" value="Log In" />
+				<input type="button" class="btn btn-primary btn-signup" value="Sign Up" />
+			</div><!-- end col-login-pinterest -->
+			<div class="col col-xs-6 col-login-nologin">
+				<h3>Continue without signing in (you will not be able to save your selections)</h3>
+				<input type="button" class="btn btn-primary btn-nologin" value="Continue" />
+			</div><!-- end col-login-nologin -->
+		</div><!-- end row-login-options -->
+	</div><!-- end container-login-modal -->
+
+	<div class="container-fluid container-main">
+    	<div class="row row-basic-search">
+    		<div class="col col-xs-12 col-basic-search">
+    			<input id="input-cuisine" type="text" value="Cuisine" class="basic-search-input" />
+    			<br />
+    			<input id="input-dish" type="text" value="Dish" class="basic-search-input" />
+    			<br />
+    			<input name="input-time" id="input-time" type="text" value="Meal Time" class="basic-search-input" />
+    			<br />
+    			<input id="input-restaurant-name" type="text" value="Restaurant Name" class="basic-search-input" />
+    			<br />
+    			<input id="input-radius" type="text" value="Distance" class="basic-search-input" />
+    			<br />
+    			<input id="input-delivers" type="checkbox" class="basic-search-input" />
+    			<label for="input-delivers">Delivers</label>
+    			<br />
+    			<input id="basic-search-submit" type="button" value="Find your Feast" class="btn btn-large btn-primary" />
+
+    		</div><!-- end col-basic-search -->
+    	</div><!-- end row-basic-search -->
+    	<div class="container-fluid container-results">
+    		<div class="row row-results">
+	    		<div class="col col-xs-3 col-navbar">
+	    			<nav id="spy">
+	        			<ul class="sidebar-nav nav">
+		            		<li class="sidebar-brand"><a href="#title"><span class="fa fa-home solo">brisket</span></a></li>
+		            		<li><a href="#anch1" data-scroll><span class="fa fa-anchor solo"><input type="checkbox" name="anchor" value="">Anchor 1</span></a></li>
+		            		<li><a href="#anch2" data-scroll><span class="fa fa-anchor solo"><input type="checkbox" name="anchor" value="">Anchor 2</span></a></li>
+		            		<li><a href="#anch3" data-scroll><span class="fa fa-anchor solo"><input type="checkbox" name="anchor" value="">Anchor 3</span></a></li>
+		            		<li><a href="#anch4" data-scroll><span class="fa fa-anchor solo"><input type="checkbox" name="anchor" value="">Anchor 4</span></a></li>
+		        		</ul>
+		    		</nav>
+				</div><!--end col nav bar -->
+    				<div class="col col-xs-6 col-results">
+    				</div><!-- end col results -->
+    		</div><!-- end row-results -->
+    	</div><!-- end container-results -->
+    </div><!-- end container-main -->
+  </div><!-- end bkg -->
+
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
+	<script src="js/app.v2.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>brisket</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Quicksand" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome-4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+</head>
+
+<body>
+    <div class="bkg">
+        <div class="container-fluid container-login-modal">
+            <div class="row row-login-about">
+                <div class="col col-xs-12 col-login-about">
+                    <h2>Find a restaurant nearby and maps your way to culinary satisfaction.</h2>
+            </div><!-- end col-login-about -->
+        </div><!-- end row-login-about -->
+        <div class="row row-login-options">
+            <div class="col col-xs-6 col-login-firebase">
+                <h3>Login to save your restaurant selections</h3>
+                <input type="button" class="btn btn-brisket2 btn-login" value="Log In With Google" />
+                <!-- <input type="button" class="btn btn-signup btn-brisket" value="Sign Up" /> -->
+            </div><!-- end col-login-pinterest -->
+            <div class="col col-xs-6 col-login-nologin">
+                <h3>Continue without signing in (you will not be able to save your selections)</h3>
+                <input type="button" class="btn btn-nologin btn-brisket2" value="Continue" />
+            </div><!-- end col-login-nologin -->
+        </div><!-- end row-login-options -->
+    </div><!-- end container-login-modal -->
+
+    <div class="container-fluid container-main">
+            <div class="row row-results">
+                <div class="col col-xs-3 col-navbar">
+                    <nav id="spy">
+                        <ul class="sidebar-nav nav">
+                            <li><img class="logo" src="img/logo.png" alt="heart-shaped meat" /></li>
+                            <li class="sidebar-brand"><a href="#title"><span class="solo">brisket</span></a></li>
+                            <br />
+                            <li><button class="btn btn-brisket2 calign" id="view-saves">Saved Restaurants</button></li>
+                            <br />
+                            <li><button class="btn btn-brisket2 calign" id="all-cuisines">All Cuisines</button></li>
+                            <br />
+                            <li><input id="input-cuisine" type="text" value="Cuisine, Name, etc." class="basic-search-input" /></li>
+                            <br />
+                            <li><input id="input-radius" type="text" value="Distance (mi)" class="basic-search-input" /></li>
+                            <br />
+                            <li><input id="basic-search-submit" type="button" value="Search" class="btn btn-large btn-brisket2" /></li>
+                        </ul>
+                    </nav>
+                </div><!--end col nav bar -->
+
+                <div class="col col-xs-9 col-result-target">
+                    <div class="row row-result-target">
+                    </div><!-- /row-result-target -->
+                </div><!-- end col-result-target -->
+            </div><!-- end row-results -->
+        </div><!-- end container-main -->
+    </div><!-- end bkg -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
